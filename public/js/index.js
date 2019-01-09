@@ -5,7 +5,10 @@ var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
 =======
 >>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
 // The API object contains methods for each kind of request we'll make

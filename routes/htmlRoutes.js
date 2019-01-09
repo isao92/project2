@@ -3,6 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
 <<<<<<< HEAD
+<<<<<<< HEAD
   app.get("/", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
       res.render("index", {
@@ -23,6 +24,8 @@ module.exports = function(app) {
     });
   });
 =======
+=======
+>>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
   // app.get("/", function(req, res) {
   //   db.Example.findAll({}).then(function(dbExamples) {
   //     res.render("index", {
@@ -42,6 +45,9 @@ module.exports = function(app) {
   //     });
   //   });
   // });
+<<<<<<< HEAD
+>>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
+=======
 >>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
 
   // Render 404 page for any unmatched routes

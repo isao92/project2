@@ -1,14 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 DROP DATABASE IF EXISTS exampledb;
 CREATE DATABASE exampledb;
 
 DROP DATABASE IF EXISTS testdb;
 CREATE DATABASE testdb;
 =======
+=======
+>>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
 DROP DATABASE IF EXISTS users_db;
 CREATE DATABASE users_db;
 SELECT*FROM Users;
 
 -- DROP DATABASE IF EXISTS testdb;
 -- CREATE DATABASE testdb;
+<<<<<<< HEAD
+>>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
+=======
 >>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
