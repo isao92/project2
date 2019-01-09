@@ -16,15 +16,7 @@
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "mysql2": "^1.6.4",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "sequelize": "^4.41.2"
-=======
     "sequelize": "^4.42.0"
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
-=======
-    "sequelize": "^4.42.0"
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
   },
   "devDependencies": {
     "chai": "^4.1.2",
@@ -34,12 +26,6 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^5.2.0",
     "prettier": "^1.13.7"
-<<<<<<< HEAD
-<<<<<<< HEAD
-  }
-=======
-=======
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
   },
   "directories": {
     "test": "test"
@@ -54,8 +40,4 @@
     "url": "https://github.com/isao92/project2/issues"
   },
   "homepage": "https://github.com/isao92/project2#readme"
-<<<<<<< HEAD
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
-=======
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
 }

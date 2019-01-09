@@ -1,33 +1,15 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "password": "pass&wordpasswo&rd123",
-    "database": "jobs_db",
-=======
     "password": "password",
     "database": "users_db",
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
-=======
-    "password": "password",
-    "database": "users_db",
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": null,
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "database": "jobs_db",
-=======
     "database": "testdb",
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
-=======
-    "database": "testdb",
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
     "host": "localhost",
     "dialect": "mysql",
     "logging": false

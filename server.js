@@ -20,32 +20,14 @@ app.engine(
   })
 );
 app.set("view engine", "handlebars");
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
 app.use("/", require("./routes/authentic"));
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
-=======
-app.use("/", require("./routes/authentic"));
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-var syncOptions = { force: false };
-=======
 
 
 var syncOptions = { force: true };
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
-=======
-
-
-var syncOptions = { force: true };
->>>>>>> 43ec1aa7aa22259c8a72740c283122708e77c622
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
