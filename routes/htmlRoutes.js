@@ -1,5 +1,8 @@
+
 var db = require("../models");
 var isAuthenticated = require("../config/middleware/isAuthenticated");
+var axios = require("axios");
+
 module.exports = function(app) {
   // Load signup page
   app.get("/", function(req, res) {
@@ -10,6 +13,31 @@ module.exports = function(app) {
   app.get("/login", function(req, res) {
     res.render("login");
   });
+
+  app.get("/results/:keyword", function(req, res) {
+    var keyword = req.params.keyword;
+    console.log(keyword);
+    var host = 'data.usajobs.gov';
+    var userAgent = 'taylor.walker@hotmail.com';
+    var authKey = 'SnG1WMVHJOBFFinDZmjikE4ce8QJwq4N4OLPxobdD4M=';
+    axios.get("https://data.usajobs.gov/api/search?Keyword=" + keyword, {
+      headers: {
+        "Host": host,
+        "User-Agent": userAgent,
+        "Authorization-Key": authKey
+      }
+    }).then(
+      function (response) {
+        console.log(response.data);
+        // res.json(response.data.SearchResult.SearchResultItems);
+        res.render("results", {
+          jobs: response.data.SearchResult.SearchResultItems
+        });
+      }
+    );
+    
+  });
+
 
    // Load survey page
    app.get("/survey", isAuthenticated, function(req, res) {
