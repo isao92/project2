@@ -11,20 +11,16 @@ body {
 }
 .centered {
     position: absolute;
-    top: 50%;
+    text-align: center;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font: bolder;
-    font-size: 60px;
+    font-size: 40px;
     color: black;
   }
 
   .centered2 {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font: bolder;
-    font-size: 60px;
-    color: black;
+    border: red solid 5px;
+    text-align: center;
   }
