@@ -35,11 +35,7 @@ app.engine(
   })
 );
 app.set("view engine", "handlebars");
-<<<<<<< HEAD
-=======
-app.use("/", require("./routes/authentic"));
 app.use("/", require("./routes/oneStop"));
->>>>>>> c6801f177f9d2b60fbcc7abd94c60a0598d2b40e
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
