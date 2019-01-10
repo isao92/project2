@@ -11,6 +11,18 @@ module.exports = function(app) {
     res.render("login");
   });
 
+   // Load survey page
+   app.get("/survey", isAuthenticated, function(req, res) {
+    db.User.findOne({
+      where: {
+        id: req.user.id
+      },
+      include: [db.Example]
+    }).then(function(dbUser) {
+      res.render("survey", { user: dbUser });
+    });
+  });
+  
   // Load profile page
   app.get("/profile", isAuthenticated, function(req, res) {
     db.User.findOne({
@@ -23,17 +35,7 @@ module.exports = function(app) {
     });
   });
 
-   // Load survey page
-   app.get("/survey", isAuthenticated, function(req, res) {
-    db.User.findOne({
-      where: {
-        id: req.user.id
-      },
-      include: [db.Example]
-    }).then(function(dbUser) {
-      res.render("survey", { user: dbUser });
-    });
-  });
+  
   // Load example page and pass in an example by id
   app.get("/example/:id", isAuthenticated, function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(
