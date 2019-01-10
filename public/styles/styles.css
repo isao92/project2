@@ -4,3 +4,11 @@
 #cloud {
   background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/UhGJuGw/cartoon-clouds-and-blue-sky_e1bx3ypee__F0007.png")
 }
+nav a:hover{
+  background: #0aaae9;
+  color: white;
+  border-radius: 5%;
+}
+h1 {
+  font-style: oblique
+}
