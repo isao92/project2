@@ -1,0 +1,21 @@
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: bolder;
+    font-size: 60px;
+    color: black;
+  }
+
+.buttons {
+    position: absolute;
+    bottom: 40px;    
+  }
+
+.image {
+    position: fixed;
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 20px;  
+}
