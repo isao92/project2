@@ -12,12 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
-<<<<<<< HEAD
-    "dotenv": "^6.0.0",
-=======
     "bcrypt-nodejs": "0.0.3",
     "dotenv": "^6.2.0",
->>>>>>> c6801f177f9d2b60fbcc7abd94c60a0598d2b40e
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
