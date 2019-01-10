@@ -14,7 +14,7 @@ module.exports = function (app) {
     var host = 'data.usajobs.gov';
     var userAgent = 'taylor.walker@hotmail.com';
     var authKey = 'SnG1WMVHJOBFFinDZmjikE4ce8QJwq4N4OLPxobdD4M=';
-    axios.get("https://data.usajobs.gov/api/search?Keyword=" + keyword, {
+    axios.get("https://data.usajobs.gov/api/search?LocationName=California&Keyword=" + keyword, {
       headers: {
         "Host": host,
         "User-Agent": userAgent,
@@ -23,9 +23,22 @@ module.exports = function (app) {
     }).then(
       function (response) {
         res.json(response.data);
+        for (i = 0; i < response.data.length; i++) {
+          var qualSum = response.data[i].MatchedObjectDescriptor.text.toLowerCase();
+                        if (qualSum.includes(Marketing&Sales.toLowerCase())) {
+                        console.log("hello!");
+                        }
+        }
+                       
       }
+
     );
   });
+
+// }
+
+
+
 
 
 
