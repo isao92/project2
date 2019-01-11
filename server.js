@@ -11,6 +11,8 @@ var PORT = process.env.PORT || 3000;
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
+
+
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -19,7 +21,7 @@ app.use(express.static("public"));
 // We need to use sessions to keep track of our user's login status
 app.use(
   session({
-    secret: "our secret key to our server",
+    secret: process.env.SERVER_SECRET,
     resave: true,
     saveUninitialized: true
   })
@@ -40,7 +42,7 @@ app.use("/", require("./routes/oneStop"));
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-var syncOptions = { force: true };
+var syncOptions = { force: true }
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
