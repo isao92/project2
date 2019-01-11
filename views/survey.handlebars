@@ -16,15 +16,15 @@
                                 <form>
                                     <div class="form-group">
                                         <label for="searchTerm">What Industry?</label>
-                                        <input class="form-control" type="text" placeholder="Default input">
+                                        <input class="form-control" type="text" id=""placeholder="Default input">
                                     </div>
                                     {{!-- <div class="form-group">
                                         <label for="searchTerm">Where would you like to work?</label>
                                         <input class="form-control" type="text" placeholder="Default input">
                                     </div> --}}
                                     <div class="form-group">
-                                        <label for="exampleFormControlSelect1">Where would you like to work?</label>
-                                        <select class="form-control" id="exampleFormControlSelect1">
+                                        <label for="searchState">Where would you like to work?</label>
+                                        <select class="form-control" id="searchState">
                                             <option value="AL">Alabama</option>
                                             <option value="AK">Alaska</option>
                                             <option value="AZ">Arizona</option>
@@ -80,12 +80,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="searchTerm">How many years of work experince do you currently have?</label>
-                                        <input class="form-control" type="text" placeholder="Default input">
+                                        <select name="experience" id="experience">
+                                            <option value="lessThanThree">1 to 3 years</option>
+                                            <option value="threeToFive">3 to 5 years</option>
+                                            <option value="moreThanFive">5 or more</option>
+                                        </select>
                                         <br><br>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <!-- Search Btn -->
-                                        {{!-- <a href="recipes.html" class="btn btn-primary" id="searchBtn">Search</a>
-                                        --}}
+                                        <button type="submit" class="btn btn-primary" id= "surveySubmit">Submit</button>
+                                      
                                 </form>
                             </div>
                         </div>
