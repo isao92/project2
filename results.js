@@ -1,5 +1,6 @@
 require("dotenv").config();
-
+var axios = require("axios");
+var express = require("express");
 // displayJobInfo function re-renders the HTML to display the appropriate content
 function displayJobInfo() {
     const token = process.env.CAREER_TOKEN;
@@ -43,7 +44,7 @@ function displayJobInfo() {
       var URL = career.URL;
 
       // Creating an element to hold the URL
-      var pThree = $("<img>").text("src" + URL);
+      var pThree = $("<href>").text("src" + URL);
 
       // Appending the URL
       jobDiv.append(pThree);

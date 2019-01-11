@@ -28,7 +28,7 @@ module.exports = function(app) {
       }
     }).then(
       function (response) {
-        console.log(response.data);
+        console.log(JSON.stringify(response.data));
         // res.json(response.data.SearchResult.SearchResultItems);
         res.render("results", {
           jobs: response.data.SearchResult.SearchResultItems
@@ -50,7 +50,7 @@ module.exports = function(app) {
       res.render("survey", { user: dbUser });
     });
   });
-  
+
   // Load profile page
   app.get("/profile", isAuthenticated, function(req, res) {
     db.User.findOne({
