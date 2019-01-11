@@ -14,11 +14,7 @@
     "axios": "^0.18.0",
     "bcrypt-nodejs": "0.0.3",
     "dotenv": "^6.2.0",
-<<<<<<< HEAD
     "express": "^4.16.3",
-=======
-    "express": "^4.16.4",
->>>>>>> master
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
     "mysql2": "^1.6.4",

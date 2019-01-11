@@ -83,9 +83,9 @@ module.exports = function (app) {
       function (response) {
         res.json(response.data);
         for (i = 0; i < response.data.length; i++) {
-          var qualSum = response.data[i].MatchedObjectDescriptor.text.toLowerCase();
-                        if (qualSum.includes(Marketing&Sales.toLowerCase())) {
-                        console.log("hello!");
+          var qualSum = response.data[i].SearchResult.SearchResultItems[0].MatchedObjectDescriptor.QualificationSummary.toLowerCase();
+                        if (qualSum.includes(Social&Media&Director.toLowerCase())) {
+                        console.log(qualSum);
                         }
         }
                        
