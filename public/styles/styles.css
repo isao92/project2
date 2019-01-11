@@ -13,6 +13,48 @@ h1 {
   font-style: oblique
 }
 
-label {
-  
+
+.wrapper {
+position: absolute;
+top:55%;
+left:50%;
+transform: translate(-50%, -50%);
+width: 80%;
 }
+
+#Layer_1 {
+  width: 100%;
+}
+
+path {
+  stroke: #fff;
+  /* fill: #fff; */
+  stroke-dasharray: 970;
+  opacity: 10;
+  animation: animate 3s cubic-bezier(0,0.23,1,.1);
+}
+
+
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 970;
+  }
+
+  30% {
+      opacity: 10;
+      fill: none;
+      stroke-dashoffset: 970;
+  }
+
+  90% {
+      fill: rgba(255, 255, 255, 0);
+  }
+
+  100% {
+      opacity: 10;
+      fill: rgba(255, 255, 255, 0);
+      stroke-dashoffset: 0;
+  }

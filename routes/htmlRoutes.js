@@ -1,7 +1,10 @@
 
 var db = require("../models");
+
 var isAuthenticated = require("../config/middleware/isAuthenticated");
 var axios = require("axios");
+
+
 
 module.exports = function(app) {
   // Load signup page
@@ -14,13 +17,14 @@ module.exports = function(app) {
     res.render("login");
   });
 
-  app.get("/results/:keyword", function(req, res) {
+  app.get("/results/:keyword/:state", function(req, res) {
+    var state = req.params.keyword;
     var keyword = req.params.keyword;
     console.log(keyword);
     var host = 'data.usajobs.gov';
     var userAgent = 'taylor.walker@hotmail.com';
     var authKey = 'SnG1WMVHJOBFFinDZmjikE4ce8QJwq4N4OLPxobdD4M=';
-    axios.get("https://data.usajobs.gov/api/search?Keyword=" + keyword, {
+    axios.get("https://data.usajobs.gov/api/search?LocationName=" + state + "&Keyword=" + keyword, {
       headers: {
         "Host": host,
         "User-Agent": userAgent,
