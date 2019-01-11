@@ -10,4 +10,5 @@
 
 # Technology
 
-- "Dream Job Finder App" utulizes the following node package 
+- "Dream Job Finder App" utilizes the following node package:
+    
