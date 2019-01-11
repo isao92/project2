@@ -43,6 +43,7 @@ path {
       stroke-dashoffset: 970;
   }
 
+
   30% {
       opacity: 10;
       fill: none;
@@ -58,3 +59,4 @@ path {
       fill: rgba(255, 255, 255, 0);
       stroke-dashoffset: 0;
   }
+}
