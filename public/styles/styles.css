@@ -13,6 +13,7 @@ h1 {
   font-style: oblique
 }
 
+
 .wrapper {
 position: absolute;
 top:55%;
@@ -57,4 +58,3 @@ path {
       fill: rgba(255, 255, 255, 0);
       stroke-dashoffset: 0;
   }
-}
