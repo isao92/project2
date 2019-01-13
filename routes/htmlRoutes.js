@@ -19,9 +19,11 @@ module.exports = function(app) {
   });
 
   app.get("/results/:keyword/:state", function(req, res) {
-    var state = req.params.keyword;
+    console.log("Wohooo!");
+  
+    var state = req.params.state;
     var keyword = req.params.keyword;
-    console.log(keyword);
+    // console.log(keyword);
     var host = 'data.usajobs.gov';
     var userAgent = 'taylor.walker@hotmail.com';
     var authKey = 'SnG1WMVHJOBFFinDZmjikE4ce8QJwq4N4OLPxobdD4M=';

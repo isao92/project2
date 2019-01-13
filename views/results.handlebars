@@ -15,11 +15,26 @@
                             </div>
                             <div class="card-body">
                                 <div class="resultlist">
-                                    
+
                                     {{#each jobs}}
                                     <li>
-                                       {{this.MatchedObjectDescriptor.PositionTitle}}
+                                        {{this.MatchedObjectDescriptor.PositionTitle}}
                                     </li>
+                                    <li>
+                                        {{this.MatchedObjectDescriptor.ApplyURI}}
+                                    </li>
+                                    <li>
+                                        {{this.MatchedObjectDescriptor.PositionLocationDisplay}}
+                                    </li>
+                                    <li>
+                                        {{this.MatchedObjectDescriptor.OrganizationName}}
+                                    </li>
+                                    <li>
+                                        
+                                    </li>
+                                    {{!-- {{this.MatchedObjectDescriptor.PositionSchedule.Name}} --}}
+                                    {{!-- {{this.MatchedObjectDescriptor.PositionLocation.CountrySubDivisionCode}} --}}
+                                    
                                     {{/each}}
                                 </div>
                             </div>
