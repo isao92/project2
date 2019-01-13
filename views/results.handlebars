@@ -17,24 +17,35 @@
                                 <div class="resultlist">
 
                                     {{#each jobs}}
-                                    <li>
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{this.MatchedObjectDescriptor.PositionTitle}}</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">{{this.MatchedObjectDescriptor.PositionLocationDisplay}}</h6>
+                                            <p class="card-text"> {{this.MatchedObjectDescriptor.OrganizationName}}</p>
+                                            <a href={{this.MatchedObjectDescriptor.ApplyURI}} class="card-link">"Click
+                                                here to Apply!</a>
+                                                <button type="button" class="btn btn-primary btn-sm" id="submitResult">Save Job To Profile</button>
+
+                                        </div>
+                                    </div>
+                                    <br><br>
+                                    {{!-- <h2>
                                         {{this.MatchedObjectDescriptor.PositionTitle}}
-                                    </li>
-                                    <li>
-                                        {{this.MatchedObjectDescriptor.ApplyURI}}
-                                    </li>
+                                    </h2>
+
                                     <li>
                                         {{this.MatchedObjectDescriptor.PositionLocationDisplay}}
                                     </li>
                                     <li>
                                         {{this.MatchedObjectDescriptor.OrganizationName}}
                                     </li>
-                                    <li>
-                                        
-                                    </li>
+
+                                    <a href={{this.MatchedObjectDescriptor.ApplyURI}}>"Click the link to Apply!</a>
+                                    --}}
+
                                     {{!-- {{this.MatchedObjectDescriptor.PositionSchedule.Name}} --}}
                                     {{!-- {{this.MatchedObjectDescriptor.PositionLocation.CountrySubDivisionCode}} --}}
-                                    
+
                                     {{/each}}
                                 </div>
                             </div>

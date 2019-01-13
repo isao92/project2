@@ -44,6 +44,17 @@ module.exports = function(app) {
     
   });
 
+ // Load results page
+ app.get("/results", isAuthenticated, function(req, res) {
+  db.User.findOne({
+    where: {
+      id: req.user.id
+    },
+    include: [db.Example]
+  }).then(function(dbUser) {
+    res.render("results", { user: dbUser });
+  });
+});
 
    // Load survey page
    app.get("/survey", isAuthenticated, function(req, res) {
