@@ -13,23 +13,29 @@ h1 {
   font-style: oblique
 }
 
+.scaling-svg-container {
+  display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%; 
+	vertical-align: middle; 
+	overflow: hidden; 
+ }
+ .scaling-svg {
+  position: absolute; 
+  height: 100%; 
+  width: 100%; 
+  left: 0; 
+  top: 0;
+ }
 
-.wrapper {
-position: absolute;
-top:55%;
-left:50%;
-transform: translate(-50%, -50%);
-width: 80%;
-}
 
-#Layer_1 {
-  width: 100%;
-}
+
 
 path {
-  stroke: #fff;
+  stroke: #000000;
   /* fill: #fff; */
-  stroke-dasharray: 970;
+  stroke-dasharray: 153;
   opacity: 10;
   animation: animate 3s cubic-bezier(0,0.23,1,.1);
 }
@@ -40,13 +46,13 @@ path {
   0% {
       opacity: 0;
       fill: none;
-      stroke-dashoffset: 970;
+      stroke-dashoffset: 153;
   }
 
   30% {
       opacity: 10;
       fill: none;
-      stroke-dashoffset: 970;
+      stroke-dashoffset: 153;
   }
 
   90% {
