@@ -1,8 +1,9 @@
 <div class="row">
     <div class="col-8 offset-2">
-        <h1>Hello {{user.email}}!</h1>
+        {{!-- Taking out hello for now --}}
+        {{!-- <h2>Hello {{user.email}}!</h2> --}}
         <header>
-            <h1 id="djr">Dream Job Results!<span class="badge badge-secondary"></span></h1>
+            <h2 id="djr">Dream Job Results!<span class="badge badge-secondary"></span></h2>
         </header>
         <div class="container">
             <div class="results">
@@ -11,11 +12,12 @@
                         <div class="card">
 
                             <div class="card-header">
-                                Your Results:
+                                Your Matching Results:
                             </div>
                             <div class="card-body">
                                 <div class="resultlist">
 
+<<<<<<< HEAD
                                     {{#each jobs}}
                                     <div class="card" style="width: 18rem;">
                                         <div class="card-body">
@@ -35,18 +37,87 @@
 
                                     <li>
                                         {{this.MatchedObjectDescriptor.PositionLocationDisplay}}
+=======
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{#each jobsMatched}}
+                                                {{this}}
+                                                {{/each}}</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">{{#each jobsMatched3}}
+                                                    {{this}}
+                                                {{/each}}</h6>
+                                            <p class="card-text">{{#each jobsMatched4}}
+                                                    {{this}}
+                                                {{/each}}</p>
+                                            <a href={{#each jobsMatched2}} {{this}} {{/each}} class="card-link">"Click
+                                                here to Apply!</a>
+                                            <button type="button" class="btn btn-primary btn-sm" id="submitResult">Save
+                                                Job To Profile</button>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                    {{!-- <li>
+                                        {{this.arrayOfJobUrl}}
+>>>>>>> b4680e604f34ad940273eb883781ef94e759621c
                                     </li>
                                     <li>
-                                        {{this.MatchedObjectDescriptor.OrganizationName}}
+                                        {{this.arrayOfJobLocation}}
                                     </li>
+<<<<<<< HEAD
 
                                     <a href={{this.MatchedObjectDescriptor.ApplyURI}}>"Click the link to Apply!</a>
                                     --}}
 
                                     {{!-- {{this.MatchedObjectDescriptor.PositionSchedule.Name}} --}}
                                     {{!-- {{this.MatchedObjectDescriptor.PositionLocation.CountrySubDivisionCode}} --}}
+=======
+                                    <li>
+                                        {{this.arrayOfJobOrganizationName}}
+                                    </li> --}}
+
+
+                                    <div class="row">
+                                        <br>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                These are the Jobs:
+                            </div>
+                            <div class="card-body">
+                                <div class="resultlist">
+
+                                    {{#each jobs}}
+
+                                    <div class="card" style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">{{this.MatchedObjectDescriptor.PositionTitle}}</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">{{this.MatchedObjectDescriptor.PositionLocationDisplay}}</h6>
+                                            <p class="card-text"> {{this.MatchedObjectDescriptor.OrganizationName}}</p>
+                                            <a href={{this.MatchedObjectDescriptor.ApplyURI}} class="card-link">"Click
+                                                here to Apply!</a>
+                                            <button type="button" class="btn btn-primary btn-sm" id="submitResult">Save
+                                                Job To Profile</button>
+
+                                        </div>
+                                    </div>
+
+>>>>>>> b4680e604f34ad940273eb883781ef94e759621c
 
                                     {{/each}}
+
+
+
+
+
                                 </div>
                             </div>
                         </div>
