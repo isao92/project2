@@ -25,7 +25,29 @@
     
 </head>
 
-<body id= "cloud">
+<body>
+<div id="background-wrap">
+    <div class="x1">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x2">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x3">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x4">
+        <div class="cloud"></div>
+    </div>
+
+    <div class="x5">
+        <div class="cloud"></div>
+    </div>
+</div>
+ 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       
@@ -48,10 +70,10 @@
         <ul class="navbar-nav">
           {{#unless user}}
           <li class="nav-item">
-            <a class="nav-link" href="/">Signup</a>
+            <a class="nav-link" href="/">Create Account</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login">Login</a>
+            <a class="nav-link" href="/login">Sign in</a>
           </li>
           {{/unless}}
           {{#if user}}
