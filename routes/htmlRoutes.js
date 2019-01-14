@@ -34,7 +34,7 @@ module.exports = function(app) {
       }
     }).then(
       function (response) {
-        console.log(JSON.stringify(response.data));
+        // console.log(JSON.stringify(response.data));
         // res.json(response.data.SearchResult.SearchResultItems);
         res.render("results", {
           jobs: response.data.SearchResult.SearchResultItems
