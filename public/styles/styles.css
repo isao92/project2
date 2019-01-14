@@ -82,9 +82,9 @@ z-index: -1;
 /* ANIMATIONS */
 
 .x1 {
-	-webkit-animation: animateCloud 40s linear infinite;
-	-moz-animation: animateCloud 40s linear infinite;
-	animation: animateCloud 40s linear infinite;
+	-webkit-animation: animateCloud 35s linear infinite;
+	-moz-animation: animateCloud 35s linear infinite;
+	animation: animateCloud 35s linear infinite;
 	
 	-webkit-transform: scale(0.65);
 	-moz-transform: scale(0.65);
