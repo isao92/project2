@@ -18,7 +18,7 @@ module.exports = function(app) {
   });
 
   app.get("/results/:keyword/:state", function(req, res) {
-    console.log("Wohooo!");
+    console.log("html Wohooo!");
   
     var state = req.params.state;
     var keyword = req.params.keyword;
