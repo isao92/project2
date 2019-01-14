@@ -1,3 +1,5 @@
+
+
 .resultlist .card{
   margin-left: 3%;
   margin-right: 3%;
@@ -262,3 +264,33 @@ path {
       stroke-dashoffset: 0;
   }
 }
+
+
+
+/*
+@media screen max-width: 800px
+*/
+@media (max-width: 800px){
+
+
+.card-columns {
+
+	column-count: 2;
+
+}
+
+}
+
+/*
+@media screen max-width: 800px
+*/
+@media (max-width: 650px){
+
+
+	.card-columns {
+	
+		column-count: 1;
+	
+	}
+	
+	}

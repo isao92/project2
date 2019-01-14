@@ -19,8 +19,6 @@ var arrayOfJobObjects = [];
 
 var matchedTitleOne = "";
 
-
-
 module.exports = function(app) {
   // Load signup page
   app.get("/", function(req, res) {
@@ -174,20 +172,6 @@ module.exports = function(app) {
                       jobOrganizationName
                     ]
                   }
-
-                  
-                  // arrayOfJobUrl: [
-                  //   jobUrl
-                  // ],
-                  // arrayOfJobLocation: [
-                  //   jobLocation
-                  // ],
-                  // arrayOfJobOrganizationName: [
-                  //   jobOrganizationName
-                  // ]
-
-                  console.log("This is the jobTitle " + jobTitle);
-                  console.log("This is the jobObjectWithMatches.arrayOfJobObjects " + jobObjectWithMatches.arrayOfJobObjects);
 
                   x++;
                 }
