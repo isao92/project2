@@ -67,23 +67,23 @@ module.exports = function (app) {
     res.redirect("/");
   });
 
-  app.get("/api/usajobs/:keyword", function (req, res) {
-    var keyword = req.params.keyword;
-    console.log(keyword);
-    var host = 'data.usajobs.gov';
-    var userAgent = 'taylor.walker@hotmail.com';
-    var authKey = 'SnG1WMVHJOBFFinDZmjikE4ce8QJwq4N4OLPxobdD4M=';
-    axios.get("https://data.usajobs.gov/api/search?Keyword=" + keyword, {
-      headers: {
-        "Host": host,
-        "User-Agent": userAgent,
-        "Authorization-Key": authKey
-      }
-    }).then(
-      function (response) {
-        res.json(response.data);
-      }
-    );
-  });
+  // app.get("/api/usajobs/:keyword", function (req, res) {
+  //   var keyword = req.params.keyword;
+  //   console.log(keyword);
+  //   var host = 'data.usajobs.gov';
+  //   var userAgent = 'taylor.walker@hotmail.com';
+  //   var authKey = 'SnG1WMVHJOBFFinDZmjikE4ce8QJwq4N4OLPxobdD4M=';
+  //   axios.get("https://data.usajobs.gov/api/search?Keyword=" + keyword, {
+  //     headers: {
+  //       "Host": host,
+  //       "User-Agent": userAgent,
+  //       "Authorization-Key": authKey
+  //     }
+  //   }).then(
+  //     function (response) {
+  //       res.json(response.data);
+  //     }
+  //   );
+  // });
 
 };
