@@ -270,11 +270,27 @@ path {
 /*
 @media screen max-width: 800px
 */
-@media screen and (max-width: 800px) {
+@media (max-width: 800px){
 
-	.results .card-body{
 
-		width: 100%;
+.card-columns {
 
-	}
+	column-count: 2;
+
 }
+
+}
+
+/*
+@media screen max-width: 800px
+*/
+@media (max-width: 650px){
+
+
+	.card-columns {
+	
+		column-count: 1;
+	
+	}
+	
+	}
