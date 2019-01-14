@@ -94,10 +94,7 @@ module.exports = function(app) {
           j < response.data.SearchResult.SearchResultItems.length;
           j++
         ) {
-          // get id of current job posting being analyzed
-          console.log(
-            response.data.SearchResult.SearchResultItems[j].MatchedObjectId
-          );
+         
 
           // Loop goes through each keyword from experience level
           for (var i = 0; i < findExp.length; i++) {
@@ -186,8 +183,6 @@ module.exports = function(app) {
                   //   jobOrganizationName
                   // ]
 
-                  console.log("This is the jobTitle " + jobTitle);
-                  console.log("This is the jobObjectWithMatches.arrayOfJobObjects " + jobObjectWithMatches.arrayOfJobObjects);
 
                   x++;
                 }
