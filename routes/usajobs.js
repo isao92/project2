@@ -1,6 +1,6 @@
+require("dotenv").config();
 var axios = require("axios");
 var host = 'data.usajobs.gov';
-
 
 
 

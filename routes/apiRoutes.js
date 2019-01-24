@@ -1,3 +1,4 @@
+require("dotenv").config();
 var db = require("../models");
 var axios = require("axios");
 var passport = require("../config/passport");
@@ -71,8 +72,10 @@ module.exports = function (app) {
     var keyword = req.params.keyword;
     console.log(keyword);
     var host = 'data.usajobs.gov';
+
+    
     var userAgent = 'taylor.walker@hotmail.com';
-    var authKey = 'SnG1WMVHJOBFFinDZmjikE4ce8QJwq4N4OLPxobdD4M=';
+    var authKey = process.env.USAJOBS_ID;
     axios.get("https://data.usajobs.gov/api/search?Keyword=" + keyword, {
       headers: {
         "Host": host,

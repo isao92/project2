@@ -19,6 +19,8 @@ var arrayOfJobObjects = [];
 
 var matchedTitleOne = "";
 
+
+
 module.exports = function(app) {
   // Load signup page
   app.get("/", function(req, res) {
@@ -173,6 +175,10 @@ module.exports = function(app) {
                     ]
                   }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6c0b59fc1ba764bd6e4fec953d79ee6c2e717883
                   x++;
                 }
               } catch (error) {
@@ -195,6 +201,8 @@ module.exports = function(app) {
       });
   });
 
+
+  
   // Load survey page
   app.get("/survey", isAuthenticated, function(req, res) {
     db.User.findOne({
