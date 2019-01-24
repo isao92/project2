@@ -94,7 +94,10 @@ module.exports = function(app) {
           j < response.data.SearchResult.SearchResultItems.length;
           j++
         ) {
-         
+          // get id of current job posting being analyzed
+          console.log(
+            response.data.SearchResult.SearchResultItems[j].MatchedObjectId
+          );
 
           // Loop goes through each keyword from experience level
           for (var i = 0; i < findExp.length; i++) {
@@ -172,7 +175,10 @@ module.exports = function(app) {
                     ]
                   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6c0b59fc1ba764bd6e4fec953d79ee6c2e717883
                   x++;
                 }
               } catch (error) {
