@@ -72,7 +72,7 @@ module.exports = function (app) {
     console.log(keyword);
     var host = 'data.usajobs.gov';
     var userAgent = 'taylor.walker@hotmail.com';
-    var authKey = 'SnG1WMVHJOBFFinDZmjikE4ce8QJwq4N4OLPxobdD4M=';
+    var authKey = '';
     axios.get("https://data.usajobs.gov/api/search?LocationName=California&Keyword=" + keyword, {
       headers: {
         "Host": host,
