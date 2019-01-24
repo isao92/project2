@@ -1,7 +1,6 @@
+require("dotenv").config();
 var axios = require("axios");
 var host = 'data.usajobs.gov';
-var userAgent = 'taylor.walker@hotmail.com';
-var authKey = 'SnG1WMVHJOBFFinDZmjikE4ce8QJwq4N4OLPxobdD4M=';
 
 
 
